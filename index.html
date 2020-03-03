@@ -61,3 +61,135 @@
         transition: margin-left .5s; /* If you want a transition effect */
         padding: 20px;
         }
+        
+                /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+        }
+
+        .nav {
+
+        background-color:pink
+        position:fixed;
+
+        }
+
+
+        h1 {
+
+          font-size:500%;
+          font-family:'Gravitas One',monospace;
+          color:#D291BC;
+          text-align: center;
+          font-weight:bolder;
+
+}
+
+      h2 {
+
+      font-size:150%;
+      font-family:'Roboto', sans-serif;
+      color:#D291BC;
+      text-align:center;;
+
+
+
+}
+
+      body {
+
+      background-image: url(water.png);
+      background-size: 100% 100%;
+      background-repeat:no-repeat;
+
+
+}
+
+      #link {
+
+      text-decoration:none;
+      color:#957DAD;
+      font-family:'Nuntio', sans-serif;
+      text-align:center;
+
+
+
+}
+      .box {
+
+      text-align: center;
+      border-style: solid;
+      padding-top:50px;
+      padding-bottom:150px;
+      background-color: white;
+      opacity: 0.7;
+
+
+
+
+
+}
+
+      #contact {
+
+      padding:0px;
+      margin:0px;
+
+
+
+
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <div id="mySidebar" class="sidebar" "nav">
+      <a href="javascript:void(0)" class-"closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+    </div>
+
+    <div id="main" class="nav">
+      <button class="openbtn" onclick="openNav()">&#9776; Navigation</button>
+    </div>
+
+  <div class="box">
+    <h1>Nettie's Work</h1>
+
+    <h2>Hey, I'm Nettie - a web developer based in Cambridgeshire, UK</h2>
+
+    <div id="contact">
+
+      <a href="https://www.pinterest.com/"><img src="https://img.icons8.com/windows/64/000000/pinterest.png"></a>
+      <a href="https://www.facebook.com/"><img src="https://img.icons8.com/windows/64/000000/facebook-new.png"></a>
+      <a href="https://www.instagram.com/"><img src="https://img.icons8.com/windows/64/000000/instagram-new.png"></a>
+
+    </div>
+  </div>
+
+
+    <script>
+
+          /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      }
+
+    </script>
+
+  </body>
+
+</html>
+
+
